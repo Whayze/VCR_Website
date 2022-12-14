@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Recorder.js demo with record, stop and pause - addpipe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+  <body>
+    <p>Sagen Sie folgendes Wort in Ihr Mikrofon: <b>Z</b></p>
+    
+    <div id="controls">
+  	 <button id="recordButton">Record</button>
+  	 <!-- <button id="pauseButton" disabled>Pause</button> -->
+  	 <button id="stopButton" disabled>Stop</button>
+    </div>
+
+    <div id="formats">Format: start recording to see sample rate</div>
+    
+  	<p><strong>Recording:</strong></p>
+  	<ol id="recordingsList"></ol>
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  	<script src="js/recorder.js"></script>
+  	<script src="js/app.js"></script>
+    <script type = "text/javascript"> changeGlobal("z"); </script>
+
+    <button id="button">Weiter</button>
+    <script type = "text/javascript"> disableButton(); </script>
+    <script type="text/javascript">
+      document.getElementById("button").onclick = function () {
+          location.href = "22_end.html";
+      };
+  </script>
+
+  </body>
+</html>
