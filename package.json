@@ -1,0 +1,5 @@
+{
+    "name" : "VCR",
+    "repository" : {"type": "git", "url": "https://github.com/Whayze/VCR_Website"},
+    "main" : "index.html"
+  }
