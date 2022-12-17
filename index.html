@@ -13,5 +13,22 @@
     <p>Sprechen Sie bitte auf den folgenden Seiten die jeweils angegebenen Wörter (insgesamt 20) klar und deutlich auf Hochdeutsch in Ihr Mikrofon.</br>Starten Sie die Aufnahme mit "Record" und beenden Sie sie mit "Stop".</br>Um zur nächsten Seite zu gelangen, klicken Sie auf den Button "Upload" um Ihre Aufnahme hochzuladen, dann wird der "Weiter"-Button freigeschaltet.</br>Mit dem "Save to disk"-Button können Sie Ihre aufgenommene Datei auf Ihre Festplatte downloaden, es ist jedoch <b>nicht</b> notwendig.</p>
     <a href="./2_achse.html">Los geht's!</a>
 
+
+    <button id="create-container-button">Create container</button>
+    <button id="select-button">Select and upload files</button>
+    <input type="file" id="file-input" multiple style="display: none;" />
+    <button id="list-button">List files</button>
+    <button id="delete-button">Delete selected files</button>
+    <button id="delete-container-button">Delete container</button>
+    <p><b>Status:</b></p>
+    <p id="status" style="height:160px; width: 593px; overflow: scroll;" />
+    <p><b>Files:</b></p>
+    <select id="file-list" multiple style="height:222px; width: 593px; overflow: scroll;" />
+
+
+
     </body>
+
+    <script type="module" src="./index.js"></script>
+
 </html>
